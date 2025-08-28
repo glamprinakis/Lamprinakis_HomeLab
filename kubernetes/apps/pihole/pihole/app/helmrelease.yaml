@@ -26,10 +26,9 @@ spec:
     DNS1: "1.1.1.1"
     DNS2: "1.0.0.1"
 
-    # Persistence
+    # Persistence - disabled for now due to no storage class
     persistentVolumeClaim:
-      enabled: true
-      size: "1Gi"
+      enabled: false
 
     # Web service (ClusterIP for now)
     serviceWeb:
