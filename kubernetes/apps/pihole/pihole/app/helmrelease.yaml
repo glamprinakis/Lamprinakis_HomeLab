@@ -30,7 +30,7 @@ spec:
     persistentVolumeClaim:
       enabled: false
 
-    # Web service (ClusterIP for now)
+    # Web service (ClusterIP for internal access via Gateway)
     serviceWeb:
       type: ClusterIP
       port: 80
