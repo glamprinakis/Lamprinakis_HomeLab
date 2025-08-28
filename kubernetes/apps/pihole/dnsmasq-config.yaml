@@ -1,0 +1,9 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: pihole-dnsmasq-custom
+  namespace: pihole
+data:
+  # Send queries for your cluster domain to k8s-gateway to keep split-DNS working.
+  05-k8s-conditional.conf: |
+    server=/glamprinakis.com/192.168.31.241
