@@ -68,9 +68,3 @@ spec:
         mountPath: /etc/dnsmasq.d/05-k8s-conditional.conf
         subPath: 05-k8s-conditional.conf
         readOnly: true
-
----
-apiVersion: v1
-kind: Namespace
-metadata:
-  name: pihole
