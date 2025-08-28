@@ -19,13 +19,13 @@ spec:
     # Basic settings
     timezone: "Europe/Athens"
 
-    # Admin password
-    adminPassword: "changeme123"
+    # Admin password (from encrypted secret)
+    adminPassword: "${SECRET_PIHOLE_ADMIN_PASSWORD}"
 
     # DNS settings
     DNS1: "1.1.1.1"
     DNS2: "1.0.0.1"
-    
+
     # Custom dnsmasq configuration for Kubernetes cluster domains
     dnsmasq:
       customDnsEntries: []
