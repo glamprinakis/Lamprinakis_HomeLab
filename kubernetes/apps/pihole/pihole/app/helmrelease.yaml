@@ -25,6 +25,16 @@ spec:
     # DNS settings
     DNS1: "1.1.1.1"
     DNS2: "1.0.0.1"
+    
+    # Custom dnsmasq configuration for Kubernetes cluster domains
+    dnsmasq:
+      customDnsEntries: []
+      customCnameEntries: []
+      customSettings:
+        # Forward .cluster.local domains to CoreDNS
+        - "server=/cluster.local/10.43.0.10"
+        - "server=/svc.cluster.local/10.43.0.10"
+        - "server=/default.svc.cluster.local/10.43.0.10"
 
     # Persistence - disabled for now due to no storage class
     persistentVolumeClaim:
