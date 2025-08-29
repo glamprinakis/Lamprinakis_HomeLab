@@ -3,7 +3,7 @@
 apiVersion: kustomize.config.k8s.io/v1beta1
 kind: Kustomization
 resources:
-  - ./cert-manager/kustomization.yaml
+  # - ./cert-manager/kustomization.yaml  # Has the same metadata.name bug
   - ./default/kustomization.yaml
   - ./flux-system/kustomization.yaml
   - ./kube-system/kustomization.yaml
