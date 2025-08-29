@@ -9,4 +9,4 @@ resources:
   - ./kube-system/kustomization.yaml
   - ./network/kustomization.yaml
   - ./pihole/ks.yaml
-  - ./grafana/kustomization.yaml
+  - ./grafana/ks.yaml  # Changed from kustomization.yaml to ks.yaml
