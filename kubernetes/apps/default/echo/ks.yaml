@@ -5,9 +5,6 @@ kind: Kustomization
 metadata:
   name: &app echo
   namespace: &namespace default
-  labels:
-    flux-test: "pipeline-working"
-    test-change: "flux-verification-test"
 spec:
   commonMetadata:
     labels:
